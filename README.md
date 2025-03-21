@@ -1,11 +1,24 @@
 # TrackLockScraper
-Scrape Deadlock game data from tracklock website to get data for player.
 
-Read the data with **BeautifulSoup**
+Scrape match data from the website tracklock.gg for a specific player
 
-and look at the data
+Process the data, and export it as a CSV file.
 
-Change player variable to the one you want to pull data for (currently for "Eidorian" https://tracklock.gg/players/1676299122)
-playerID = 1676299122 # Ediorian
+### currently output
+A CSV file containing match data with columns:
+- Result (Win/Loss)
+- Date (Date played)
+- Duration (Match length)
 
-currently fetches "Win/Loss", "Match length", "Date played"
+## IPython Notebook content
+
+- Invidual scrape examples
+- converting to Pandas DataFrame 
+- exporting as csv
+- Functions for actual scraping
+
+### Functions
+pages = pullTracklockPages(playedId)
+data = scrapeTracklock(pages)
+exportData(data, playerId)
+
