@@ -18,7 +18,7 @@ A CSV file containing match data with columns:
 - Functions for actual scraping
 
 ### Functions
-pages = pullTracklockPages(playedId)
+pages = pullTracklockPages(playerdId)
 
 data = scrapeTracklock(pages)
 
